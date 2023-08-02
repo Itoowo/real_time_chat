@@ -1,8 +1,8 @@
 const fs = require('fs');
 const con = require('../config/db');
 
-const index = (req, res)=>{
-    res.render('/')
+const index = (req, res) => {
+    res.render('index')
 }
 
 const homepage = (req, res) => {
@@ -18,7 +18,6 @@ const signup_post = (req, res) => {
         let timestamp = Date.now();
         let file = req.files.file;
         let filename = timestamp + file.name;
-        console.log(file)
         file.mv('./public/uploads/' + filename, (err) => {
             if (err) throw err;
         })
@@ -42,8 +41,14 @@ const login = (req, res) => {
     res.render('login', { title: 'Disnut - Login' });
 }
 
-const login_post = (req, res)=>{
-    console.log(req.body)
+const login_post = (req, res) => {
+    let body = req.body;
+    let email = body.email;
+    let password = body.password;
+    con.query('select * from `user` where email = ? and password = ?', [email, password], (err, result) => {
+        if (err) throw err;
+        res.redirect('/')
+    })
 }
 
 module.exports = {

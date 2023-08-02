@@ -5,7 +5,7 @@ const router = express.Router();
 router.get('/', indexCon.index);
 
 router.get('/login', indexCon.login);
-router.post('/login', indexCon.login_post)
+router.post('/login', indexCon.login_post);
 
 router.get('/signup', indexCon.signup);
 router.post('/signup', indexCon.signup_post);
