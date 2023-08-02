@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('./partials/header') %>
+
+    <body>
+
+        <nav id="nav_bar" class="navbar navbar-dark fixed-top">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/homepage"><i id="logo-homepage" class="fa-solid fa-dragon"></i>Disnut</a>
+            </div>
+        </nav>
+        <div class="homepage d-flex align-items-center">
+            <div class="container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-5">
+                        <div class="txtbox">
+                            <h1>Welcome To Disnut</h1>
+                            <p>A place where you can belong to a school club, a gaming group, or a worldwide art
+                                community. Where just you and a handful of friends can spend time together. A place
+                                that
+                                makes it easy to talk every day and hang out more often.</p>
+                        </div>
+                        <form class="reg-form d-flex">
+                            <a class="btn login" href="/signup">Sign Up</a>
+                            <a class="btn signup" href="/login">Log In</a>
+                        </form>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="img-box">
+                            <img class="img-fluid" src="vendors/img/hangout.png" alt="">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </body>
+    <%- include('./partials/script') %>
+
+</html>

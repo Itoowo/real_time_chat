@@ -1,0 +1,45 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Victor Mono', monospace;
+}
+#logo-homepage{
+    font-size: 30px;
+    color: #fff;
+    margin-right: 20px;
+}
+.navbar-nav{
+    gap: 20px;
+}
+.reg-form{
+    width: 100%;
+    gap: 20px;
+    justify-content: center;
+}
+.btn.login, .btn.signup{
+    box-shadow: 1px 1px 5px 3px rgba(255, 255, 255, 0.477);
+    background-color: transparent;
+}
+.homepage{
+    background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);
+    height: 100vh;
+}
+.txtbox, .img-box{
+    text-align: center;
+}
+.txtbox h1{
+    font-size: 33px;
+    color: #fff;
+    margin-top: 65px;
+}
+.txtbox p{
+    font-size: 13px;
+    color: #fff;
+    margin-top: 15px;
+}
+.btn.login:hover, .btn.signup:hover{
+    background-color: #fff;
+}
+.form-reg input{
+    background-color: transparent;
+}
