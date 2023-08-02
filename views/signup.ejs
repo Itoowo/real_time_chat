@@ -11,7 +11,7 @@
                         <img class="img-fluid" src="vendors/img/signup2.svg" alt="" style="margin-top: 100px;">
                     </div>
                     <div class="col-md-5 py-5 rounded" style="box-shadow: 1px 1px 5px 2px white;">
-                        <form class="form-reg" action="/signup" method="post">
+                        <form class="form-reg" action="/signup" method="post" enctype="multipart/form-data">
                             <h1>Sign Up</h1>
                             <!-- 2 column grid layout with text inputs for the first and last names -->
                             <div class="row mb-4 mt-4">
@@ -43,7 +43,7 @@
                             <!-- Insert input -->
                             <div class="mb-3">
                                 <label for="formFile" class="form-label">Your profile picture</label>
-                                <input class="form-control" type="file" id="formFile" accept="image/png, image/gif, image/jpeg" required>
+                                <input class="form-control" type="file" name="file" id="formFile" accept="image/png, image/gif, image/jpeg" required>
                               </div>
                           
                             <!-- Checkbox -->

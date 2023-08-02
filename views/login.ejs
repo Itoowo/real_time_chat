@@ -1,8 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-    <%- include('./partials/header') %>
-<body>
-    <h1>login</h1>
-</body>
+<%- include('./partials/header') %>
+
+    <body style=" background: radial-gradient(circle, rgba(238,174,202,1) 0%, rgba(148,187,233,1) 100%);">
+        <div class="signup-page d-flex align-items-center">
+            <div class="container">
+                <a style="position: relative; top: 30px;" class="navbar-brand" href="/homepage"><i id="logo-homepage" class="fa-solid fa-dragon"></i>Disnut</a>
+                <div class="row d-flex justify-content-around">
+                    <div class="col-md-5">
+                        <img class="img-fluid" src="vendors/img/signup2.svg" alt="" style="margin-top: 100px;">
+                    </div>
+                    <div class="col-md-5 py-5 rounded" style="box-shadow: 1px 1px 5px 2px white; margin-top: 100px;">
+                        <form class="form-reg" action="/login" method="post">
+                            <h1>Login</h1>
+    
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                              <input type="email" name="email" id="form3Example3" class="form-control" required/>
+                              <label class="form-label" for="form3Example3">Email address</label>
+                            </div>
+                          
+                            <!-- Password input -->
+                            <div class="form-outline mb-4">
+                              <input type="password" name="password" id="form3Example4" class="form-control" required/>
+                              <label class="form-label" for="form3Example4">Password</label>
+                            </div>
+                            <!-- Insert input -->
+                          
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                              <input class="form-check-input me-2" type="checkbox" value="" id="form2Example33" checked required/>
+                              <label class="form-check-label" for="form2Example33">
+                                Keep me login
+                              </label>
+                            </div>
+                          
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Sign up</button>
+                        
+                          </form>   
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
     <%- include('./partials/script.ejs') %>
+
 </html>
