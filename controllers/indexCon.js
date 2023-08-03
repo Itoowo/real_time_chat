@@ -51,11 +51,16 @@ const login_post = (req, res) => {
     })
 }
 
+const logout_post = (req, res)=>{
+    res.redirect('/homepage')
+}
+
 module.exports = {
     index,
     login,
     homepage,
     signup,
     signup_post,
-    login_post
+    login_post,
+    logout_post
 }

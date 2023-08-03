@@ -69,19 +69,38 @@
                     <span class="tooltip">Setting</span>
                 </li>
                 <li class="profile">
-                    <div class="profile-details">
-                        <img src="uploads/16909878450301318226.png" alt="profileImg" />
-                        <div class="name_job">
-                            <div class="nickname">Test1</div>
-                            <div class="username">Test1#1</div>
+                    <form action="/logout" method="post">
+                        <div class="profile-details">
+                            <img src="uploads/16909878450301318226.png" alt="profileImg" />
+                            <div class="name_job">
+                                <div class="nickname">Test1</div>
+                                <div class="username">Test1#1</div>
+                            </div>
                         </div>
-                    </div>
-                    <i class="bx bx-log-out" id="log_out"></i>
+                        <button>
+                            <i class="bx bx-log-out" id="log_out"></i>
+                        </button>
+
+                    </form>
+
                 </li>
             </ul>
         </div>
-        <section class="home-section">
-            <div class="text">Dashboard</div>
+        <section class="home-section overflow-hidden">
+            <div class="row d-flex">
+                <div class="col-md-3 overflow-hidden" style="height: 100vh; background: #0c0c15;">
+                    <div class="online-list">
+                        <h1>Messages</h1>
+                        <hr>
+                    </div>
+                    <div class="users-list">
+                        <input type="search" class="searchbox" placeholder="Search...">
+                    </div>
+                </div>
+                <div class="col-md-9" style="height: 100vh; background: #121220;">
+                </div>
+            </div>
+
         </section>
 
 
