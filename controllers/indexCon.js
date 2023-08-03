@@ -2,7 +2,7 @@ const fs = require('fs');
 const con = require('../config/db');
 
 const index = (req, res) => {
-    res.render('index')
+    res.render('index', {title: 'Disnut'})
 }
 
 const homepage = (req, res) => {
